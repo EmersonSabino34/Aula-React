@@ -1,34 +1,24 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState } from "react"
 
 function App() {
-  const [count, setCount] = useState(0)
+  // Definindo as variaveis
+  const [nome, setNome] = useState("")
+  const [sobrenome, setSobrenome] = useState("")
 
   return (
-    <>
+    <div className="container">
+
+      <h2 className="text-center">Aula React</h2>
+
       <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+        {/* Iputs que colocam um valor na variavel */}
+        <input className="form-control mt-2 mb-2" type="text" placeholder="Nome" value={nome} onChange={(e) => setNome(e.target.value)} />
+        <input className="form-control" type="text" placeholder="Nome" value={sobrenome} onChange={(event) => setSobrenome(event.target.value)} />
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+
+        {/* Mostrando os valores */}
+      <p className="text-center">Nome: {nome}  Sobrenome: {sobrenome} </p>
+    </div>
   )
 }
 

@@ -11,12 +11,22 @@
     https://www.youtube.com/watch?v=tUQDzI26TLo
 
 ### 3. Criando o projeto
+* Criando projeto ReactJS
     ```
     npm create vite@latest
     ```
-    * entrar na pasta do projeto cd nomeProjeto
-    * voltar um diretório cd ..
-    * npm i
+* Entrar na pasta do projeto 
+    ```
+    cd nomeProjeto
+    ```
+* Voltar um diretório 
+    ```
+    cd .. 
+    ```
+* Instalar Dependências apos criar o projeto ou baixar do github
+    ```
+    npm i
+    ```
 
 ### 4. Rodando o projeto
     npm run dev

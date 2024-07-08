@@ -1,0 +1,13 @@
+button{
+    height: 50px;
+    width: 150px;
+}
+
+input:focus, input{
+    border: none;
+    outline: none;
+}
+
+input{
+    background-color: bisque;
+}

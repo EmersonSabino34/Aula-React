@@ -10,10 +10,10 @@ export function Exercicio02(){
 
                     <div className="row">
                         <div className="col-8">
-                            <input type="text"  className="form-control p-3" placeholder="Nome do produto" />
+                            <input type="text"  className="form-control p-4" placeholder="Nome do produto" />
                         </div>
                         <div className="col">
-                            <input type="date" className="form-control p-3" />
+                            <input type="date" className="form-control p-4" />
                         </div>
                         <div className="col">
                             <input type="number"  className="form-control p-3" placeholder="QTD" />

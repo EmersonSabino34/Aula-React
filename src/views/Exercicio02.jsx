@@ -1,10 +1,10 @@
 export function Exercicio02(){
     return(
-        <div className="container-fluid mt-3">
+        <div className="containe-fluid mt-3">
             <div className="py-5 rounded container bg-info">
                  
                 <form>
-                    <div className="container bg-success py-4 d-flex justify-content-center mb-5 rounded">
+                    <div className="containe bg-success py-4 d-flex justify-content-center mb-5 rounded">
                         <h1 className="text-white"> App React 02 </h1>
                     </div>
 

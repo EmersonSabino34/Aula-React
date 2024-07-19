@@ -1,0 +1,16 @@
+{
+    "produto": [
+        { "id": 1, "produto": "tv smart 48",   "quantidade": 20, "price": 200.99 },
+        { "id": 2, "produto": "notebook dell", "quantidade": 20, "price": 200.99 }
+    ],
+    "cliente": [
+        { "id": 1, "nome":  "Antônio", "cidade": ""},
+        { "id": 1, "nome":  "Antônio", "cidade": ""}
+    ],
+    "vendas": [
+
+    ],
+    "fornecedores": [
+
+    ]
+}

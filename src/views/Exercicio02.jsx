@@ -2,8 +2,8 @@ export function Exercicio02(){
     return(
         <div className="containe-fluid mt-3">
             <div className="py-5 rounded container bg-info">
-                 
                 <form>
+
                     <div className="containe bg-success py-4 d-flex justify-content-center mb-5 rounded">
                         <h1 className="text-white"> App React 02 </h1>
                     </div>
@@ -28,6 +28,7 @@ export function Exercicio02(){
                         <button className="btn btn-outline-warning text-white fw-bold fs-5">Editar</button>
                         <button className="btn btn-outline-danger  text-white fw-bold fs-5">Excluir</button>
                     </div>
+                    
                 </form>
             </div>
         </div>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 01</title>
+</head>
+<body>
+    <h1>Aula 01</h1>
+
+    <form>
+        <input type="text"     id="nome" placeholder="digite seu nome">
+        <input type="text"     id="email" placeholder="digite seu email">
+        <input type="password" id="senha" placeholder="digite seu senha">
+
+        <button onclick="validar()">Cadastrar</button>
+    </form>
+
+    <script>
+        /***
+         *  a = 1000 = sinal de atribuição a = b
+         * 
+         *  compara valores
+         *  == a = 5 é b = "5"
+         *  === a 
+        */
+        function validar(){
+            var nome  = document.querySelector("#nome").value
+            var email = document.querySelector("#email").value
+            var senha = document.querySelector("#senha").value
+            
+            if( nome == "" ){
+                alert("Por favor preencher o campo nome!")
+                return false
+            }else if( !email ) {
+                alert("Por favor preencher o campo email!")
+                return false
+            }else if( !senha ) {
+                alert("Por favor preencher o campo senha!")
+                return false
+            }else{
+                alert("Seja bem vindo. " + nome)
+                return false
+            }
+        }
+        
+    </script>
+
+    <style>
+
+    </style>
+</body>
+</html>

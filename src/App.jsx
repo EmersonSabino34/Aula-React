@@ -1,9 +1,9 @@
-import { Exercicio02 } from "./views/Exercicio02";
+import { Cadastro } from "./views/cadastro";
 
 function App() {
   return (
     <>
-      <Exercicio02 />
+      <Cadastro />
     </>
   );
 }

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <title>Aula 01</title>
 </head>
 <body>
@@ -26,10 +26,12 @@
          *  === a 
         */
         function validar(){
+            /** pegando os valores dos inputs */ 
             var nome  = document.querySelector("#nome").value
             var email = document.querySelector("#email").value
             var senha = document.querySelector("#senha").value
-            
+
+            /** condicionais se  */
             if( nome == "" ){
                 alert("Por favor preencher o campo nome!")
                 return false
@@ -43,6 +45,9 @@
                 alert("Seja bem vindo. " + nome)
                 return false
             }
+
+            /** laços de repetição */
+           
         }
         
     </script>

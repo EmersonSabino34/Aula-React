@@ -28,7 +28,28 @@
     </style>
 
     <script>
-        
+
+        function validar(){
+
+            var nome  = document.querySelector("#nome").value
+            var email = document.querySelector("#email").value
+            var senha = document.querySelector("#senha").value
+
+            if( nome == "" ){
+                alert("Por favor preencher o campo nome!")
+                return false
+            }else if( !email ) {
+                alert("Por favor preencher o campo email!")
+                return false
+            }else if( !senha ) {
+                alert("Por favor preencher o campo senha!")
+                return false
+            }else{
+                alert("Seja bem vindo. " + nome)
+                return false
+            }
+        }
+
     </script>
 </body>
 

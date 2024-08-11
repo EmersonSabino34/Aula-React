@@ -11,13 +11,51 @@
        <input type="text" name="email"    placeholder="email">
        <input type="text" name="telefone" placeholder="telefone">
        <input type="text" name="senha"    placeholder="10101010">
-       <button id="btn" >Enviar</button>
+       <button id="btn">Enviar</button>
     </form>
 
 <script>
+    const form = document.querySelector("form")
+    // console.log(form)
+    const nome = form.nome
+    const email = form.email
+
+    const btn = form.btn;
+
+    function validar() {
+        if( nome.value == '' ){
+            alert("Por favor preencher o campo nome")
+            return false
+        }
+        if( email.value == "" ){
+            alert("Por favor preencher o campo email")
+            return false
+        }
+         if(telefone.value == ""){
+            alert("Por favor preencher o campo telefone")
+            return false
+        }
+         if(senha.value == ""){
+            alert("Por favor preencher o campo senha")
+            return false
+
+        }
+
+        alert( "Bem vindo: " + nome.value )
+        form.reset()
+    }
+
+    btn.addEventListener("click",function(e) {
+        e.preventDefault()
+        validar()
+
+      
+    } )
+
+    /**
         const form = document.querySelector("form")
         
-        const nome   = document.querySelector("#nome")
+        const nome   = document.querySelector("#nome").value = "joão silva"
         const nome2  = document.getElementById("nome")
         const nome3  = form.nome;
         
@@ -30,7 +68,7 @@
         function validar(){
 
         console.log (
-            `Resposta 2 \n ` +
+            `Resposta 2 \n `,
             `Nome:     ${nome.value} \n`,
             `Email:    ${email.value} \n`,
             `Telefone: ${tel.value} \n`,
@@ -53,6 +91,8 @@
 
             form.reset()
         } )
+
+    */
 </script>
     
 </body>

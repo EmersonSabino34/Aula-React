@@ -1,12 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aula 03</title>
+    <title>Document</title>
 </head>
 <body>
-    <form action="">
-        <input type="text"><input type="text"><input type="text"></form>
+    <form>
+       <input type="text" name="nome"     placeholder="nome completo">
+       <input type="text" name="email"    placeholder="email">
+       <input type="text" name="telefone" placeholder="telefone">
+       <input type="text" name="senha"    placeholder="10101010">
+       <button id="btn" >Enviar</button>
+    </form>
+
+<script>
+        const form = document.querySelector("form")
+        
+        const nome   = document.querySelector("#nome")
+        const nome2  = document.getElementById("nome")
+        const nome3  = form.nome;
+        
+        const email  = form.email;
+        const tel    = form.telefone;
+        const senha  = form.senha;
+
+        const btn = form.btn;
+
+        function validar(){
+
+        console.log (
+            `Resposta 2 \n ` +
+            `Nome:     ${nome.value} \n`,
+            `Email:    ${email.value} \n`,
+            `Telefone: ${tel.value} \n`,
+            `Senha:    ${senha.value} `
+        )
+        console.log( 
+            "Resposta 2: \n" +
+            "Nome:     " + nome.value + "\n" +
+            "Email:    " + nome.value + "\n" +
+            "Telefone: " + nome.value + "\n" +
+            "Senha:    " + nome.value + "\n" 
+        )
+        alert("hello")
+
+        }
+        
+        btn.addEventListener("click",function(e) {
+            e.preventDefault()
+            validar()
+
+            form.reset()
+        } )
+</script>
+    
 </body>
 </html>

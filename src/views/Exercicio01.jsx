@@ -27,7 +27,6 @@ export function Exercicio01(){
           <button className='btn btn-outline-success fs-6 fw-bold'>Cadastrar</button>
           <button className='btn btn-outline-warning fs-6 fw-bold'>Editar</button>
           <button className='btn btn-outline-danger fs-6 fw-bold'>Excluir</button>
-
         </div>
 
 

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 04</title>
+</head>
+<body class="container">
+    <header>
+        <h1 onclick="msn()">Aula 04</h1>
+        <div>
+            <button onclick="">fn1</button>
+            <button>fn2</button>
+            <button>fn3</button>
+            <button>fn4</button>
+            <button>fn5</button>
+        </div>
+    </header>
+
+    <style>
+        /*
+        * Elementos tag   1 tag
+        * Elementos class 2 .
+        * Elementos id    3 #
+        */
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            color: #fff;
+            background-color: #000;
+        }
+        header{
+            padding: 30px;
+            background-color: blueviolet;
+
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
+        button{
+            border: 0;
+            width: 80px;
+            padding: 5px;
+            border-radius: 7px;
+            cursor: pointer;
+        }
+        button:hover{
+            color: #fff;
+            background-color: #1c1c1c;
+        }
+    </style>
+
+    <script>
+        // alert('Emerson')
+        function msn(){
+            
+            var anoAtual = 2024
+            var anoNascimento = 1986
+            var idade = ( anoAtual - anoNascimento )
+            
+            alert( 'Emerson: ' + idade)
+        }
+        function msn2(){
+            alert("SobreNome")
+        }
+        function calcular(){
+            var agua   = 200
+            var escola = 600
+            
+            var total = agua + escola
+
+            alert('Total calculado R$ ' + total)
+        }
+        function horasAulas(){
+            var valorHora = 30
+            var horaMes = 12
+            var valorMes = valorHora * horaMes
+            // var horaMes = horaSemana * 4
+            // alert('Horas mês: ' +  horaMes)
+            alert('Horas mês: ' +  horaMes + ' Total a pagar ' + valorMes)
+        }
+        // msn()
+        // horasAulas()
+        
+    </script>
+</body>
+</html>

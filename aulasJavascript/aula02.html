@@ -8,14 +8,14 @@
 </head>
 <body>
     <h1>Aula 02</h1>
-
     <form>
-            <input type="text"      id="nome"  class="pt-3 mb-3" placeholder="digite seu nome">
-            <input type="text"      id="email" placeholder="digite seu email">
-            <input type="password"  id="nome"  placeholder="digite sua senha">
+        <input type="text" name="name" id="nome" class="pt-3 mb-3" placeholder="digite seu nome" />
+        
+        
+        
 
-            <button onclick="valida()">Cadastrar</button>
-
+        
+        <button onclick="valida()">Cadastrar</button>
     </form>
 
     <style>
@@ -28,13 +28,10 @@
     </style>
 
     <script>
-
         function validar(){
-
             var nome  = document.querySelector("#nome").value
             var email = document.querySelector("#email").value
             var senha = document.querySelector("#senha").value
-
             if( nome == "" ){
                 alert("Por favor preencher o campo nome!")
                 return false
@@ -49,7 +46,6 @@
                 return false
             }
         }
-
     </script>
 </body>
 

@@ -13,14 +13,12 @@
        <input type="text" name="senha"    placeholder="10101010">
        <button id="btn">Enviar</button>
     </form>
-
 <script>
     const form = document.querySelector("form")
     // console.log(form)
-    const nome = form.nome
+    const nome  = form.nome
     const email = form.email
-
-    const btn = form.btn;
+    const btn   = form.btn
 
     function validar() {
         if( nome.value == '' ){
@@ -38,9 +36,7 @@
          if(senha.value == ""){
             alert("Por favor preencher o campo senha")
             return false
-
         }
-
         alert( "Bem vindo: " + nome.value )
         form.reset()
     }
@@ -48,10 +44,7 @@
     btn.addEventListener("click",function(e) {
         e.preventDefault()
         validar()
-
-      
-    } )
-
+    })
     /**
         const form = document.querySelector("form")
         

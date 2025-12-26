@@ -4,7 +4,6 @@ function App() {
   const validar = (e) =>{
     e.preventDefault()
   }
-  
   return (
     
     <div class="container">

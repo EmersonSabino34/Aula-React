@@ -15,6 +15,7 @@
     https://www.youtube.com/watch?v=tUQDzI26TLo
 
 ### 3. Criando o projeto
+
 * Criando projeto ReactJS
     ```
     npm create vite@latest
